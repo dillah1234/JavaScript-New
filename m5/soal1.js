@@ -19,7 +19,7 @@ switch (hari) {
   case "Sabtu":
     console.log("weekend");
     break;
-  case "Minggu":
+  case "Minggu":ro0
     console.log("weekend");
     break;
   default:
