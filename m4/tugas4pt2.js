@@ -1,5 +1,5 @@
 var pendaftaran = false;
-var pembayaran = false;
+var pembayaran = true;
 
 if (pendaftaran === true) {
   if (pembayaran === true) {

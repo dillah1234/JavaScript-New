@@ -1,10 +1,10 @@
-var nilai = 80
-var kehadiran = 20
+var nilai = 70
+var kehadiran = 23
 var totalpertemuan = 25
 var presentasekehadiran = kehadiran/totalpertemuan*100
 
 
-if (nilai > 85) {
+if (nilai >=85) {
  console.log("katagori a");
   if (presentasekehadiran >= 75) {
     console.log("lulus");
