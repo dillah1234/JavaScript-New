@@ -1,4 +1,4 @@
-let hari = "Rabu";
+let hari = "kamis";
 
 switch (hari) {
   case "Senin":
@@ -28,10 +28,10 @@ switch (hari) {
 
 
 
-for (let i = 1; i <= 15; i++) { // 
+for (let i = 1; i <= 25; i++) { // 
   if (i % 3 == 0 && i % 5 == 0) {
     console.log("FizzBuzz"); // 15
-  } else if (i % 3 == 0) {
+  } else if (i % 5 == 0) {
     console.log("fizz"); // 3
   } else if (i % 5 == 0) {
     console.log("buzz"); // 5

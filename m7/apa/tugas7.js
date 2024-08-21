@@ -5,13 +5,13 @@ const person = {
     city: "depok",
     country: "indonesia",
   },
-};
-console.log(person.address, city);
 
-obj.key = "car";
-console.log(obj["key"]);
-obj["key"] = "cars";
-console.log(obj["key"]);
+};
+console.log(person.address );
+console.log(person.address.country);
+
+
+
 
 let obj = {
   name: "rapip",
@@ -21,11 +21,16 @@ let obj = {
     country: "indonesia",
   },
 };
+
+obj.key = "cars";
+console.log(obj["key"]);
+obj["key"] = "cars";
+console.log(obj["key"]);
 console.log(obj.address.city);
 
 // soal nomer 1
 
-let person = {
+let bros = {
   name: "rapip",
   age: 16,
   city: "depok",
@@ -34,10 +39,10 @@ console.log(person); // dengan dot notation
 
 console.log(person["name"]); // dengan bracket notation
 
-person.age = 10 + 6;
+person.age = 16 + 5;
 console.log(person.age);
 
-person["age"] = 10 + 6;
+person["age"] = 16 + 5;
 console.log(person["age"]);
 
 delete person.city;
@@ -49,13 +54,13 @@ const { name, age } = person;
 console.log(name);
 console.log(age);
 
-const person = {
+const cool = {
   name: "rapip",
   age: 16,
   city: "depok",
 };
 
-const person = {
+const behav = {
   name: "abdillah",
   age: 16,
 };
@@ -70,15 +75,15 @@ console.log(userAge);
 class Book {
   constructor(title, author) {
     this.title = title;
-    this.author = author;
+    this.asd = author;
   }
 
   getDetails() {
-    return `Title: ${this.title}, Author: ${this.author}`;
+    return `Title: ${this.title}, Author: ${this.asd}`;
   }
 }
 
-const myBook = new Book("JavaScript Essentials", "Jane Doe");
+const myBook = new Book("JavaScript Essentials", "abdillah");
 
 console.log(myBook.getDetails());
 
@@ -86,7 +91,7 @@ class animal {
   constructor(name, from, penulis) {
     this.name = name;
     this.from = from;
-    this;
+    
   }
 
   // Metode getDetails yang mengembalikan detail buku

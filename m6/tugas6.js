@@ -1,6 +1,8 @@
 let identity = ['rapip', '16', 'depok'];
 console.log(identity);
 console.log(identity[2]);
+console.log(identity[1]);
+
 
 // nomer 1
 
