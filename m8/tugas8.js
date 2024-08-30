@@ -73,16 +73,18 @@ class Manager extends Employee{
     }
   }
 
-  let nama = new Person ("rapip", "chef")
+  let nama = new Person ("rapip", "student")
   console.log(nama.introduce());
 
-  let posisi = new Employee ("rapip", "Chef")
+  let posisi = new Employee ("rapip", "student")
   console.log(posisi.introduce());  
 
-  let pemilik = new Manager ("rapip", "Chef")
+  let pemilik = new Manager ("rapip", "student")
   console.log(pemilik.introduce());
 
   
+// extends sama super itu inheritance //
+// return ama value di samping itu polymorphism 
 
 
 
