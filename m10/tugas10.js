@@ -11,11 +11,13 @@ function Person(name, age, hobby, job) {
   console.log(myFather.name);
   console.log(myMother.name);
 
+// dirancang untuk melakukan tugas tertentu. Function dijalankan saat dipanggil. Function dapat memiliki nama dan dapat didefinisikan dengan atau tanpa parameter //
+
  // soal 1
 
   function registerUser(name, userType) {
     if (userType === "VIP") {
-        return `Welcome VIP, ${name}!`;
+        return `Welcome to VIP , ${name}!`;
     } else {
         return `Welcome, ${name}!`;
     }
@@ -49,7 +51,7 @@ console.log(totalAfterDiscountNonVIP);
 
 function calculatePrice(quantity, pricePerItem, isMember) {
     let totalPrice = quantity * pricePerItem;
-    if (isMember) {
+    if (isMember == true) {
         totalPrice *= 0.85; 
     }
     return totalPrice;

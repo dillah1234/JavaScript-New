@@ -1,6 +1,6 @@
 //Praktek Nomor 1
 
-const pengunjung = 5;
+const pengunjung = 2;
 if (pengunjung>=5) {
     console.log("Harus membayar tiket penuh");
 } else if (pengunjung >=2 && pengunjung <5) {
@@ -19,7 +19,7 @@ if (usia >= 18 ) {
 }
 
 //Praktek nomor 3
-const angka = 0
+const angka = -20
 if (angka == 0) {
     console.log("Netral");
 } else if (angka <0) {
@@ -44,18 +44,18 @@ if (x > 0 && y > 0) {
 
 //praktek nomor 5 
 
-const pembelian = 190
+const pembelian = 110
 if (pembelian >=200 ) {
     console.log("Diskon 15% diterapkan");
    var discon = 0.15*pembelian
    var totalharga = pembelian-discon
    console.log(totalharga);
 
-} else if (pembelian >=100 && pembelian <200) {
+} else if (pembelian >100 && pembelian <200) {
     console.log("Diskon 10% diterapkan");
     var discon2 = 0.10*pembelian
     var totalharga2 = pembelian-discon2
-    console.log(totalharga2);
+    console.log(totalharga2 );
 
 } else if (pembelian <100) {
     console.log("Tidak Mendapat Diskon");
@@ -66,5 +66,7 @@ const umur = 18
 if (umur >= 18) {
     console.log("Registrasi Berhasil");
 } else {
-    console.log("Registrasi Gagal");
+    console.log("Registrasi Gagal"); 
 }
+
+// == mengembalikan true jika kedua operand memiliki nilai yang sama, jika tidak false

@@ -107,7 +107,7 @@ class animal {
 
 const myanimal = new animal("lion king", "depok");
 
-console.log(myanimal.getDetails()); // Output: Title: JavaScript Essentials, Author: Jane Doe
+console.log(myanimal.getDetails());
 
 //   animal.updateanimal("titan");
 

@@ -37,7 +37,7 @@ class Rectangle extends Shape {
   }
 }
 
-let Gambar = new Rectangle
+let Gambar = new Rectangle  
 console.log(Gambar.draw());
 
 // Soal Gambar 3
@@ -85,6 +85,8 @@ class Manager extends Employee{
   
 // extends sama super itu inheritance //
 // return ama value di samping itu polymorphism 
+// return untuk mengembalikan nilai
+// polymorphism mengubah value dalam methods // 
 
 
 

@@ -34,14 +34,6 @@ class Pelajar {
   
   console.log(pelajar.belajar()); 
 
-
-
-
-
-
-
-
-
   class PersegiPanjang {
     constructor(panjang, lebar) {
         this.panjang = panjang
@@ -56,14 +48,31 @@ class Pelajar {
     keliling() {
         var hasil = 2*this.panjang + this.lebar;
         return hasil;
-    }
-
-    
+    } 
 }
 
 let persegiPanjang = new PersegiPanjang (4,3)
 console.log(persegiPanjang.luas())
 console.log(persegiPanjang.keliling())
+
+
+
+
+
+
+
+
+// perbatasan //
+
+
+
+
+
+
+
+
+
+
 
 // soal 1
 
@@ -316,3 +325,9 @@ console.log(mager1.getGaje());
 
 
 console.log(mager1.buatLaporan());  
+
+//   Encapsulation bertujuan untuk membungkus (menyembunyikan) data dan metode (fungsi) di dalam suatu objek, sehingga data tersebut tidak bisa diakses secara langsung dari luar objek
+//   penyembunyian detail implementasi yang kompleks dan hanya menampilkan informasi penting atau fitur yang relevan kepada pengguna.
+
+// Getter: Digunakan untuk mengambil nilai dari properti objek.
+// Setter: Digunakan untuk mengubah nilai dari properti objek sambil mengontrol atau memvalidasi nilai tersebut sebelum disimpan.
