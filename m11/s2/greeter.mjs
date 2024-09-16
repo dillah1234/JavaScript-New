@@ -1,4 +1,6 @@
+export function greet (name) {
+    console.log(`Hello ${name} !`);
 
-export default function greet(name) {
-    return `Hello, ${name}!`;
 }
+
+export default greet

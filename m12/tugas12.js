@@ -25,77 +25,66 @@
 // });package
 
 
-// soal 1
+
+//soal 1 
 
 function printMessages() {
-    
-    console.log("Mulai");
-    setTimeout(function() { 
-        console.log("Selesai");
-    }, 2000); k
-}
+    console.log("mulai");
+    setTimeout(() => console.log("selesai"), 1000);
+  }
+  
+  printMessages();
+  
 
-printMessages();
-
-// soal 2
+  //soal 2 
 
 function printEverySecond() {
-    let count = 0;
+    let counter = 0;
+    let interval = setInterval(() => {
+      console.log("Hello World");
+      counter++;
+      if (counter === 5) {
+        clearInterval(interval);
+      }
+    }, 1000);
+  }
+  
+  printEverySecond();
+  
 
-    const intervalId = setInterval(function() {
-        console.log("Hello, World!");
-
-        count++;
-
-        if (count >= 5) {
-            clearInterval(intervalId);
-        }
-    }, 1000); 
-}
-
-printEverySecond();
-
-// soal 3
-
+  //soal 3 
 
 function greet(name, callback) {
-    
-    console.log(`Hello, ${name}!`);
-    
-    setTimeout(function() {
-        callback(); // 
-    }, 1000); 
+    console.log(`Hello ${name}`);
+    setTimeout(callback, 1000);
 }
 
 function sayGoodbye() {
-    console.log("Goodbye!");
+    console.log("Goodbye");
 }
 
-greet("Nama Anda", sayGoodbye);
+greet("yewon", sayGoodbye)
 
-// soal 4
+
+//soal 4 
 
 function performTasks() {
-    console.log("Tugas 1");
+    console.log("tugas 1");
+    setTimeout(() => {
+      console.log("tugas 2");
+      setTimeout(() => {
+        console.log("tugas 3");
+      }, 1000);
+    }, 3000);
+  }
+  
+  performTasks();
+  
 
-    setTimeout(function() {
-        console.log("Tugas 2");
-
-        setTimeout(function() {
-            console.log("Tugas 3");
-        }, 1000); 
-
-    }, 3000); 
-}
-
-performTasks();
-
-//  soal 5
-
+  //soal 5 
 function delayedMessage(message, delay) {
-    setTimeout(function() {
-        console.log(message);
-    }, delay); 
-}
+    setTimeout(() => console.log(message), delay);
+  }
 
-delayedMessage("Hello after delay", 2000);
+  console.log(delayedMessage("Hello after delay", 2000));
+
