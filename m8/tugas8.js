@@ -18,7 +18,7 @@ class Car extends Vehicle  {
   }
 }
 
-let Mobil = new Car ("brio")
+let Mobil = new Car ("supra")
 console.log(Mobil.start());
 
 
@@ -27,7 +27,7 @@ console.log(Mobil.start());
 class Shape {
  
   draw() {
-    return "Drawing  Shape"
+    return "Drawing  shape"
   }
 }
 
@@ -65,7 +65,7 @@ class Employee extends Person {
 class Manager extends Employee{
   constructor(name, position) {
     super(name, position);
-
+    
 }
     introduce() {
    return ` Hi, my name is ${this.name}, I am an ${this.position}, and i manage a team `
@@ -83,8 +83,11 @@ class Manager extends Employee{
   console.log(pemilik.introduce());
 
   
+// menurunkan/mewariskan properti dan method pada class lain. Istilah ini biasa disebut dengan inheritance //
+// Method super() digunakan untuk memanggil constructor pada parent class //
 // extends sama super itu inheritance //
 // return ama value di samping itu polymorphism 
+// kamu perlu membuat method pada child class dengan nama yang sama pada parent class tetapi isinya berbeda. Cara seperti ini disebut dengan overriding //
 // return untuk mengembalikan nilai
 // polymorphism mengubah value dalam methods // 
 

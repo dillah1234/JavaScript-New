@@ -326,8 +326,9 @@ console.log(mager1.getGaje());
 
 console.log(mager1.buatLaporan());  
 
-//   Encapsulation bertujuan untuk membungkus (menyembunyikan) data dan metode (fungsi) di dalam suatu objek, sehingga data tersebut tidak bisa diakses secara langsung dari luar objek
-//   penyembunyian detail implementasi yang kompleks dan hanya menampilkan informasi penting atau fitur yang relevan kepada pengguna.
+// encapsulation Konsep ini dimaksudkan untuk membungkus data variabel dan fungsi menjadi satu kesatuan.
+// Abstraction adalah konsep untuk menyembunyikan suatu detil proses yang tidak perlu diketahui oleh pengguna.
 
+// Method setter dan getter untuk mengakses nilai properti //
 // Getter: Digunakan untuk mengambil nilai dari properti objek.
 // Setter: Digunakan untuk mengubah nilai dari properti objek sambil mengontrol atau memvalidasi nilai tersebut sebelum disimpan.

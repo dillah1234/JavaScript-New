@@ -1,7 +1,7 @@
 var b;
 console.log((b));
 // soal nomer 1
-
+let o ;
 var name = "rapip"; // string ada petiknya
 console.log(name);
 var umur = "umur 16 tahun";
@@ -13,6 +13,7 @@ console.log(name+' ' +umur + ' ' + live)
 var a = null    
 console.log(a);
 // soal nomer 3
+var a = true
 const alas = 5 // tanpa petik adalah number
 const tinggi = 7
 const LuasSegitiga = 0.5 * alas * tinggi

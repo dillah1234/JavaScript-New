@@ -1,4 +1,4 @@
-let hari = "jumat";
+let hari = "kamis";
 
 switch (hari) {
   case "Senin":
@@ -23,12 +23,12 @@ switch (hari) {
     console.log("weekend");
     break;
   default:
-    console.log("Hari yang dipilih tidak valid."); // buat cetak
+    console.log(""); // buat cetak
 }
 
 
 
-for (let i = 1; i <= 35; i++) { // 
+for (let i = 1; i <= 25; i++) { // 
   if (i % 3 == 0 && i % 5 == 0) {
     console.log("FizzBuzz",i); // 15
   } else if (i % 5 == 0) {
@@ -53,7 +53,7 @@ for (let i = 1; i <= 10; i++) {
 
 for (i = 1; i <= 15; i++) {
   if (i % 3 == 0) {
-    console.log("multiple of 3");
+    console.log("multiple of 3",i);
   }
   
 }
