@@ -1,6 +1,6 @@
 const person = {
   name: "rapip",
-  age: 16,
+  age: 17,
   address: {
     city: "depok",
     country: "indonesia",
@@ -88,7 +88,7 @@ const myBook = new Book("JavaScript Essentials", "abdillah");
 console.log(myBook.getDetails());
 
 class animal {
-  constructor(name, from, penulis) {
+  constructor(name, from) {
     this.name = name;
     this.from = from;
     
