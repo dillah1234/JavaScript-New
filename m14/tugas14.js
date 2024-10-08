@@ -85,6 +85,11 @@ function task1() {
   
   performTasks();
 
+  // async, mengubah function synchronous menjadi asynchronous //
+  // await, menunda eksekusi hingga proses asynchronous selesai //
+
+  
+
 
 
 

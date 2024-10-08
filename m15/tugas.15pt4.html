@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Box untuk Meminta Nama</title>
+    <script>
+            alert("Selamat datang!");
+
+            var inginMasukkanNama = confirm("Apakah Anda ingin memasukkan nama Anda?");
+
+            if (inginMasukkanNama) {
+                var nama = prompt("Masukkan nama Anda:");
+
+                if (nama) {
+                    alert("Halo " + nama + ", senang bertemu dengan Anda!");
+                } else {
+                    alert("Anda tidak memasukkan nama.");
+                }
+            } else {
+                alert("Terima kasih, mungkin lain kali!");
+            }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -21,7 +21,7 @@ let person = {
 
 // yg tadi latihan 
 
-let num = 1
+let num = 3
 
 switch (num) {
     case 1:

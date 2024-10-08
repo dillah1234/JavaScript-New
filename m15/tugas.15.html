@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Angka</title>
+    <script>
+        
+            let input = prompt("Masukkan sebuah angka:");
+
+            let number = parseFloat(input);
+
+            if (isNaN(number)) {
+                alert("Input bukan angka yang valid.");
+            } else {
+                if (number > 10) {
+                    alert("Angka lebih besar dari 10.");
+                } else if (number < 10) {
+                    alert("Angka lebih kecil dari 10.");
+                } else {
+                    alert("Angka sama dengan 10.");
+                }
+            }
+        
+    </script>
+</head>
+<body>
+    <button onclick="compareNumber()">Masukkan Angka</button>
+</body>
+</html>

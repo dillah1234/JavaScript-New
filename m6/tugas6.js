@@ -24,7 +24,7 @@ console.log(food3);
 // nomer 4
 
 let student = ['ucok','budi','wati'];
-console.log(student.indexOf('budi'));
+console.log(student.indexOf('wati'));
 
 // nomer 5
 
@@ -37,5 +37,5 @@ console.log(num);
 let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(data.length);
 
-// nomer 7
+
 

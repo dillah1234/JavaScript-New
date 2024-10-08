@@ -63,7 +63,7 @@ function sayGoodbye() {
     console.log("Goodbye");
 }
 
-greet("yewon", sayGoodbye)
+greet("bedil", sayGoodbye)
 
 
 //soal 4 
@@ -79,7 +79,7 @@ function performTasks() {
   }
   
   performTasks();
-  
+   
 
   //soal 5 
 function delayedMessage(message, delay) {
@@ -87,4 +87,12 @@ function delayedMessage(message, delay) {
   }
 
   console.log(delayedMessage("Hello after delay", 2000));
+
+  // SetTimeOut untuk penundaan waktu //
+  // counter untuk menghitung berapa kali pesan dicetak //
+  // SetInterval untuk pencatakan berkali kali //
+  // ClearInterval untuk menghentikan pengulangan // 
+  // Great menerima 2 parameter //
+  // delayedMessage mencetak pesan yang diberikan setelah waktu penundaan tertentu //
+  
 
