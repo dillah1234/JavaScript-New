@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  soal 1  -->
+    <img src="" alt="" id="MyImage">
+    
+    <!--  soal 2  -->
+    <button id="MyButton">Ini Tombol Pertama</button>
+    
+    <!--  soal 3  -->
+    <ul id="MyList">
+        <li id="MyItem">Item Lama</li>
+    </ul>
+    
+    <!--  soal 4   -->
+    <!-- di JS -->
+    
+    <!--  soal 5  -->
+    <div id="imageContainer">
+    </div>
+    
+    <script>
+        //soal 1 
+        const image = document.getElementById('MyImage');
+        image.src = 'https://picsum.photos/200/300';
+        document.body.appendChild(image);
+        
+        //soal 2 
+        const tombol = document.getElementById('MyButton');
+        tombol.style.borderRadius = "25px";
+        tombol.style.backgroundColor = "green";
+        
+        //soal 3 
+        const list = document.getElementById('MyList');
+        const item = document.createElement('li');
+        item.innerText = 'Item Baru';
+        list.appendChild(item);
+        
+        //soal 4 
+        const sisipkan = document.createElement('li');
+        sisipkan.innerText = 'Item Sisipan';
+        list.insertBefore(sisipkan, item);
+        
+        //soal 5 
+        const container = document.getElementById('imageContainer');
+        const gambar = document.createElement('img');
+        gambar.setAttribute('src', 'https://picsum.photos/200/300');
+        gambar.style.borderRadius = "50%";
+        container.appendChild(gambar);
+        
+    </script>
+</body> 
+</html>
