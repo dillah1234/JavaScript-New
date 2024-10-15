@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="onPageLoad()">
+    <button onclick="showMassage()">click me</button>
+
+    <button id="MyButton">klik saya</button>
+  </body>
+
+  <script>
+    function showMassage() {
+      alert("welcome");
+    }
+
+    function onPageLoad() {
+      alert("halaman telah dimuat ulang");
+    }
+
+    const button = document.getElementById("MyButton");
+    button.addEventListener("click", function () {
+      alert("tombol telak diklik!");
+    });
+  </script>
+</html>

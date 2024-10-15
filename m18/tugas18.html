@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="justbutton">Just Button</button>
+    <button id="myButton">Tombol Show Alert</button>
+    <button id="myButton2">Tombol Show Alert (Onload)</button>
+    <button id="myButton3">Hitung Klik</button>
+    <button id="myButton4">Sambutan Nama</button>
+    <p>Jumlah klik: <span id="clickCount">0</span></p>
+
+</body>
+<script>
+    const justbutton = document.getElementById("justbutton");
+        justbutton.addEventListener("click", function () {
+            alert("tombol berhasil diklik!");
+        });
+
+        function showAlert() {
+            alert("Tombol diklik!");
+        }
+
+        let count = 0;
+        function updateClickCount() {
+            count++;
+            document.getElementById("clickCount").textContent = count; 
+        }
+
+        function welcomeMessage() {
+            let userName = prompt("Silakan masukkan nama Anda:");
+
+            if (userName) {
+                alert("Selamat datang, " + userName + "!");
+            } else {
+                let tryAgain = confirm("Apakah Anda ingin mencoba lagi?");
+                if (tryAgain) {
+                    welcomeMessage(); 
+                } else {
+                    alert("Terima kasih!"); 
+                }
+            }
+        }
+
+        window.onload = function() {
+            document.getElementById("myButton").onclick = showAlert;
+
+            document.getElementById("myButton2").addEventListener("click", showAlert);
+
+            document.getElementById("myButton3").addEventListener("click", updateClickCount);
+
+            document.getElementById("myButton4").addEventListener("click", welcomeMessage);
+
+            let continuePage = confirm("Apakah Anda ingin melanjutkan?");
+            if (continuePage) {
+                alert("Selamat datang di halaman!");
+            } else {
+                alert("Anda memilih untuk tidak melanjutkan.");
+            }
+        };
+</script>
+
+</html>
