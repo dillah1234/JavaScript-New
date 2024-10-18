@@ -6,34 +6,42 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 class="coba"><b> coba DOM </b></h1>
-    <h1 class="coba"><b> jelas DOM </b></h1>
-    <h1 class="coba"><b> apa DOM </b></h1>
-    <h1 class="coba"><b> mencoba x</b></h1>
+    <h1 id="coba" class="coba"><b> coba DOM </b></h1>
+    <h1 id="coba" class="coba"><b> jelas DOM </b></h1>
+    <h1 id="coba" class="coba"><b> apa DOM </b></h1>
+    <h1 id="coba" class="coba"><b> mencoba x</b></h1>
 
     <script>
       let coba = document.getElementsByClassName("coba");
 
       let id = document.getElementById("coba");
+      
       let classs = document.getElementsByClassName("coba");
-      let tag = document.getElementsByTagName("coba");
 
-      console.log(id);
-      console.log(classs);
-      console.log(tag);
+      let tag = document.getElementsByTagName("h1");
 
-      let querySelector = document.querySelector("coba");
-      let querySelectorAll = document.querySelectorAll("coba");
+      console.log(id);         
+      console.log(classs);     
+      console.log(tag);        
 
-      console.log(querySelector);
-      console.log(querySelectorAll);
+      let querySelector = document.querySelector(".coba");
 
-      let newElement = document.createElement("coba");
+      let querySelectorAll = document.querySelectorAll(".coba");
+
+      console.log(querySelector);       
+      console.log(querySelectorAll);    
+
+      let newElement = document.createElement("p");
 
       newElement.innerText = "coba createElement";
+
       coba[0].appendChild(newElement);
 
       coba[0].removeChild(newElement);
+    </script>
+  </body>
+</html>
+
 
     //   soal 1 //
 

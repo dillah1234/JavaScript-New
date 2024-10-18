@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="triggerButton">Trigger Button</button>
+    <div id="parent">
+        <button id="myButton">Click Me !</button>
+    </div>
+
+
+    <script>
+         const customClickEvent = new CustomEvent('customClickEvent')
+        function handleCustomClick() {
+            console.log('Custom Click Event Triggered');
+        }
+        window.addEventListener('load', function () {
+            const triggerButton = document.getElementById('triggerButton')
+            window.addEventListener('customClickEvent', handleCustomClick)
+            triggerButton.addEventListener('click', function () {
+                window.dispatchEvent(customClickEvent)
+            })
+        })
+
+        const buttonClicked = new CustomEvent('buttonClicked');
+        function handleButtonClick() {
+            console.log('Button was clicked!');
+        }
+        function handleParentClick() {
+            document.getElementById('parent').addEventListener('click', function () {
+                console.log('Parent received the event!');
+            });
+        }
+        window.addEventListener('load', function () {
+            const tombol = document.getElementById('myButton');
+            window.addEventListener('buttonClicked', handleButtonClick);
+            tombol.addEventListener('click', function () {
+                window.dispatchEvent(buttonClicked);
+            });
+            handleParentClick();
+        });
+    </script>
+</body>
+</html>
