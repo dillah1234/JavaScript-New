@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="soal1.css">
+    <title>Soal 1</title>
+</head>
+<body>
+    <div class="contents">
+        <h2 align="center">Isi data diri</h2>
+        <div class="formContent">
+            <form id="formDataDiri">
+                <div class="form-element">
+                    <label for="inputNama">Nama:</label><br />
+                    <input type="text" id="inputNama" name="nama" placeholder="Nama Anda" required /><br />
+                </div>
+                <div class="form-element">
+                    <label for="inputDomisili">Gmail:</label><br />
+                    <input type="email" id="inputGmail" name="Email" placeholder="Email anda" required /><br />
+                </div>
+                <div class="form-element">
+                    <input type="submit" value="Submit Data" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('formDataDiri');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const inputNama = document.getElementById('inputNama').value;
+            const inputGmail = document.getElementById('inputGmail').value;
+            alert(`Halo ${inputNama}, gmail anda ${inputGmail}`);
+        });
+    </script>
+</body>
+</html>
