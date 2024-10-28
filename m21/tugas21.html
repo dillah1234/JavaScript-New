@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Penyimpanan Nama</title>
+</head>
+<body>
+    <h1>Aplikasi Penyimpanan Nama</h1>
+
+    <!-- Form untuk memasukkan nama pengguna -->
+    <form id="nameForm">
+        <label for="username">Masukkan Nama Anda:</label><br>
+        <input type="text" id="username" required>
+        <button type="submit">Simpan</button>
+    </form>
+
+    <!-- Area untuk menampilkan nama yang tersimpan -->
+    <div id="displayArea"></div>
+
+    <script>
+        // Fungsi untuk menampilkan nama yang tersimpan atau pesan jika tidak ada nama
+        function displayStoredName() {
+            const displayArea = document.getElementById('displayArea');
+            const storedName = localStorage.getItem('username');
+
+            if (storedName) {
+                displayArea.textContent = `Nama yang tersimpan: ${storedName}`;
+            } else {
+                displayArea.textContent = 'Belum ada nama yang tersimpan.';
+            }
+        }
+
+        // Fungsi untuk menyimpan nama ke dalam localStorage
+        function saveName(event) {
+            event.preventDefault(); // Mencegah halaman reload
+            const nameInput = document.getElementById('username').value;
+
+            // Simpan nama ke localStorage dengan kunci "username"
+            localStorage.setItem('username', nameInput);
+
+            // Tampilkan nama yang baru disimpan
+            displayStoredName();
+        }
+
+        // Event listener untuk form submit
+        document.getElementById('nameForm').addEventListener('submit', saveName);
+
+        // Tampilkan nama yang tersimpan saat halaman dimuat
+        window.onload = displayStoredName;
+    </script>
+</body>
+</html>

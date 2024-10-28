@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Praktek</title>
+</head>
+<body>
+    <input type="text" id="Username" placeholder="Masukkan Username">
+    <button id="SaveButton">Simpan</button>
+    <p id="output"></p>
+    <button id="removeButton">hapus</button>
+    <p id="status"></p>
+    <script>
+        window.addEventListener('load', function () {
+            const storedUsername = localStorage.getItem('username');
+            const status = document.getElementById('status');
+            if (storedUsername) {
+                status.innerText = "Ada data yang tersimpan"
+            } else {
+                status.innerText = "Tidak Ada Data yang Tersimpan"
+            }
+        });
+        document.getElementById('SaveButton').addEventListener('click', function () {
+            const username = document.getElementById('Username').value;
+            localStorage.setItem('username', username);
+            const storedUsername = localStorage.getItem('username');
+            document.getElementById('output').innerText = ("Username Disimpan " + (storedUsername ? storedUsername : "Tidak Ada"));
+        });
+        document.getElementById('removeButton').addEventListener('click', function () {
+            localStorage.removeItem('username');
+            alert("Username berhasil dihapus")
+        });
+    </script>
+</body>
+</html>

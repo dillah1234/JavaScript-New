@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Penyimpanan Nama</title>
+</head>
+<body>
+    <h1>Aplikasi Penyimpanan Nama</h1>
+
+    <!-- Form untuk memasukkan nama pengguna -->
+    <form id="nameForm">
+        <label for="username">Masukkan Nama Anda:</label><br>
+        <input type="text" id="username" required>
+        <button type="submit">Simpan</button>
+    </form>
+
+    <!-- Tombol Hapus untuk menghapus nama yang tersimpan -->
+    <button id="deleteButton">Hapus</button>
+
+    <!-- Area untuk menampilkan status penyimpanan nama -->
+    <div id="status"></div>
+
+    <!-- Area untuk menampilkan nama yang tersimpan -->
+    <div id="displayArea"></div>
+
+    <script>
+        // Fungsi untuk menampilkan nama yang tersimpan atau pesan jika tidak ada nama
+        function displayStoredName() {
+            const displayArea = document.getElementById('displayArea');
+            const statusArea = document.getElementById('status');
+            const storedName = localStorage.getItem('username');
+
+            if (storedName) {
+                displayArea.textContent = `Nama yang tersimpan: ${storedName}`;
+                statusArea.textContent = 'Nama pengguna tersedia.';
+            } else {
+                displayArea.textContent = 'Belum ada nama yang tersimpan.';
+                statusArea.textContent = 'Nama pengguna tidak tersedia.';
+            }
+        }
+
+        // Fungsi untuk menyimpan nama ke dalam localStorage
+        function saveName(event) {
+            event.preventDefault(); // Mencegah halaman reload
+            const nameInput = document.getElementById('username').value;
+
+            // Simpan nama ke localStorage dengan kunci "username"
+            localStorage.setItem('username', nameInput);
+
+            // Tampilkan nama yang baru disimpan
+            displayStoredName();
+        }
+
+        // Fungsi untuk menghapus nama dari localStorage
+        function deleteName() {
+            localStorage.removeItem('username'); // Hapus data dengan kunci "username"
+            displayStoredName(); // Perbarui tampilan
+            alert('Username dihapus.'); // Tampilkan pesan konfirmasi
+        }
+
+        // Event listener untuk form submit
+        document.getElementById('nameForm').addEventListener('submit', saveName);
+
+        // Event listener untuk tombol hapus
+        document.getElementById('deleteButton').addEventListener('click', deleteName);
+
+        // Tampilkan nama yang tersimpan saat halaman dimuat
+        window.onload = displayStoredName;
+    </script>
+</body>
+</html>

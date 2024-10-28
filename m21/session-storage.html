@@ -1,0 +1,21 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <script>
+        //Menyimpan Data
+        sessionStorage.setItem('username', 'rapip');
+        //Mengambil Data
+        const storedUsername = sessionStorage.getItem('username');
+        console.log(storedUsername);
+        //Hapus Data
+        sessionStorage.removeItem('username');
+        //Hapus Semua Data
+        sessionStorage.clear();
+    </script>
+</body>
+</html>

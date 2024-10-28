@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mouseover Event Example</title>
     <style>
-        #colorBox {
-            width: 200px;
-            height: 200px;
-            background-color: lightblue; 
-            margin: 50px;
-            text-align: center;
-            line-height: 200px; 
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-        }
+      #colorBox {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        margin: 50px;
+        text-align: center;
+        line-height: 200px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="colorBox"></div>
 
     <script>
-        const colorBox = document.getElementById('colorBox');
+      const colorBox = document.getElementById("colorBox");
 
-        colorBox.addEventListener('mouseover', function() {
-            colorBox.style.backgroundColor = 'lightgreen';
-        });
+      colorBox.addEventListener("mouseover", function () {
+        colorBox.style.backgroundColor = "lightgreen";
+      });
 
-        colorBox.addEventListener('mouseout', function() {
-            colorBox.style.backgroundColor = 'lightblue';
-        });
+      colorBox.addEventListener("mouseout", function () {
+        colorBox.style.backgroundColor = "lightblue";
+      });
     </script>
-
-</body>
+  </body>
 </html>
