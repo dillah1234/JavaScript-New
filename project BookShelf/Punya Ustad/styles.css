@@ -1,0 +1,151 @@
+:root {
+    --main-color: #3498db; /* Warna biru lebih cerah */
+    --accent-color: #2ecc71; /* Warna hijau cerah */
+    --font-color: #444;
+    --page-background: #ffffff; /* Mengubah warna latar belakang */
+    --card-color: #fafafa;
+    --divider-color: #dcdcdc;
+}
+body {
+    font-family: 'Arial', sans-serif; /* Mengganti font */
+    background-color: var(--page-background);
+    color: var(--font-color);
+    margin: 0;
+    padding: 25px; /* Mengubah padding */
+}
+header {
+    text-align: left; /* Merubah alignment */
+    margin-bottom: 25px; /* Mengubah margin */
+}
+h1 {
+    color: var(--main-color);
+    font-size: 2.5em; /* Mengubah ukuran font */
+}
+h2 {
+    color: var(--font-color);
+    border-bottom: 3px dashed var(--divider-color); /* Mengubah border style */
+    padding-bottom: 10px; /* Mengubah padding */
+}
+main {
+    max-width: 700px; /* Mengubah ukuran maksimum */
+    margin: 0 auto;
+    background: var(--card-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Mengubah padding */
+}
+form {
+    margin-bottom: 20px; /* Mengubah margin */
+}
+form div {
+    margin-bottom: 15px; /* Mengubah margin */
+}
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--font-color);
+    margin-bottom: 8px; /* Mengubah margin */
+}
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px; /* Mengubah padding */
+    border: 1px solid var(--divider-color);
+    border-radius: 5px;
+    font-size: 14px; /* Mengubah ukuran font */
+    background-color: #f0f0f0; /* Mengubah latar belakang input */
+    transition: border-color 0.4s; /* Mengubah durasi transisi */
+}
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: var(--main-color);
+    outline: none;
+}
+button {
+    padding: 10px 16px; /* Mengubah padding */
+    border: none;
+    border-radius: 5px; /* Mengubah border-radius */
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 15px; /* Mengubah ukuran font */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #27ae60; /* Mengubah warna hover */
+    transform: translateY(-1px); /* Mengubah efek transform */
+}
+section {
+    margin-bottom: 30px; /* Mengubah margin */
+}
+#incompleteBookList,
+#completeBookList {
+    margin-top: 20px; /* Mengubah margin */
+}
+[data-testid="bookItem"] {
+    background-color: var(--card-color);
+    border: 1px solid var(--divider-color);
+    border-radius: 7px; /* Mengubah border-radius */
+    padding: 15px; /* Mengubah padding */
+    margin-bottom: 12px; /* Mengubah margin */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    position: relative;
+    transition: box-shadow 0.4s; /* Mengubah durasi transisi */
+}
+[data-testid="bookItem"]:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Mengubah efek hover */
+}
+[data-testid="bookItem"] h3 {
+    margin: 0;
+    color: var(--main-color);
+    font-weight: bold; /* Mengubah font-weight */
+}
+[data-testid="bookItem"] p {
+    margin: 6px 0; /* Mengubah margin */
+    color: #666; /* Mengubah warna teks */
+}
+[data-testid="bookItem button"] {
+    margin-right: 8px; /* Mengubah margin */
+    margin-top: 10px; /* Mengubah margin */
+    padding: 7px 12px; /* Mengubah padding */
+    font-size: 13px; /* Mengubah ukuran font */
+    color: white;
+    border-radius: 3px; /* Mengubah border-radius */
+    transition: background-color 0.3s;
+}
+[data-testid="bookItemEditButton"] {
+    background-color: #f39c12; /* Mengubah warna tombol edit */
+}
+[data-testid="bookItemEditButton"]:hover {
+    background-color: #e67e22; /* Mengubah warna tombol edit saat hover */
+}
+[data-testid="bookItemIsCompleteButton"] {
+    background-color: #00a9e0; /* Mengubah warna tombol lengkap */
+}
+[data-testid="bookItemIsCompleteButton"]:hover {
+    background-color: #0094c7; /* Mengubah warna tombol lengkap saat hover */
+}
+[data-testid="bookItemDeleteButton"] {
+    background-color: #c0392b; /* Mengubah warna tombol hapus */
+}
+[data-testid="bookItemDeleteButton"]:hover {
+    background-color: #a93226; /* Mengubah warna tombol hapus saat hover */
+}
+.toast {
+    position: fixed;
+    bottom: 30px; /* Mengubah posisi */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--font-color);
+    color: #fff;
+    padding: 10px 20px; /* Mengubah padding */
+    border-radius: 6px; /* Mengubah border-radius */
+    font-size: 14px; /* Mengubah ukuran font */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+    transition: opacity 0.5s, transform 0.3s;
+}
+.toast.fade-out {
+    opacity: 0;
+    transform: translateY(5px); /* Mengubah efek fade-out */
+}

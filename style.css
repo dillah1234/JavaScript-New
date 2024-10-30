@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Warna latar belakang yang lebih lembut */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px; /* Sedikit melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Bayangan lebih halus */
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF; /* Warna biru cerah untuk judul */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Ukuran font yang lebih besar */
+}
+
+h2 {
+    color: #343a40; /* Warna lebih gelap untuk sub-judul */
+    margin-top: 30px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    font-weight: 300; /* Mengurangi ketebalan font */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(50% - 10px);
+    padding: 12px;
+    margin: 10px 5px;
+    border: 1px solid #ced4da; /* Warna border lebih halus */
+    border-radius: 4px;
+    transition: border 0.3s, box-shadow 0.3s; /* Tambahkan efek bayangan */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efek bayangan saat fokus */
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Tambahkan bayangan */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.bookshelf {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #f8f9fa; /* Warna latar belakang rak buku lebih lembut */
+    max-height: 300px; /* Membatasi tinggi rak buku */
+    overflow-y: auto; /* Scroll jika konten melebihi tinggi */
+}
+
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    margin: 10px 0; /* Meningkatkan jarak antar item buku */
+    border-radius: 4px;
+    background: white;
+    transition: box-shadow 0.3s, transform 0.3s; /* Tambahkan efek saat hover */
+}
+
+.book-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px); /* Efek mengangkat saat hover */
+}
+
+.book-item span {
+    flex-grow: 1;
+    color: #555;
+}
